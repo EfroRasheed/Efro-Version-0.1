@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Afrah Rasheed - Profile</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f9f9f9;
+      color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      max-width: 700px;
+      width: 100%;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .name {
+      font-size: 2em;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #1f1f1f;
+    }
+
+    .tagline {
+      font-size: 1.1em;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .section {
+      margin-top: 20px;
+    }
+
+    .section h3 {
+      font-size: 1em;
+      font-weight: 600;
+      color: #777;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 4px;
+    }
+
+    .section ul {
+      list-style: none;
+    }
+
+    .section ul li {
+      margin-bottom: 6px;
+      font-size: 1em;
+      line-height: 1.5;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="name">Afrah Rasheed</div>
+    <div class="tagline">29 • Male • Hospitality Professional & Entrepreneur</div>
+
+    <div class="section">
+      <h3>About Me</h3>
+      <p>
+        With over 8 years in the hospitality industry, I’ve built my career around creating exceptional guest experiences and leading dynamic teams. For more than 5 years, I’ve taken on leadership roles that challenged and shaped me — from resort pre-openings to launching businesses that matter.
+      </p>
+    </div>
+
+    <div class="section">
+      <h3>Career Highlights</h3>
+      <ul>
+        <li>🏨 8+ years in Hospitality, including pre-opening experience at a Maldivian Resort</li>
+        <li>👨‍💼 5+ years in Leadership roles</li>
+        <li>🚀 Founder & Owner of <strong>Efro Investments</strong></li>
+        <li>⏱️ Owner of <strong>The Maldivian Timekeeper</strong></li>
+        <li>⚽ Founder & Owner of <strong>Fenaathuru Football Club</strong></li>
+        <li>📱 Co-Founder & COO of <strong>BittenApp</strong></li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      Always building, always learning.
+    </div>
+  </div>
+</body>
+</html>
