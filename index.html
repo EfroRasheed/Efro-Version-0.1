@@ -13,94 +13,138 @@
     }
 
     body {
-      background: #f9f9f9;
-      color: #333;
+      background: #f0f2f5;
+      color: #2c3e50;
       display: flex;
       align-items: center;
       justify-content: center;
       min-height: 100vh;
-      padding: 20px;
+      padding: 40px 20px;
     }
 
-    .card {
+    .container {
       background: white;
-      max-width: 700px;
-      width: 100%;
-      padding: 40px;
       border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      padding: 40px;
+      max-width: 900px;
+      width: 100%;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+    }
+
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #2c3e50;
+    }
+
+    .content {
+      flex: 1;
     }
 
     .name {
       font-size: 2em;
       font-weight: bold;
-      margin-bottom: 10px;
-      color: #1f1f1f;
+      margin-bottom: 5px;
     }
 
-    .tagline {
+    .subtitle {
       font-size: 1.1em;
       color: #555;
       margin-bottom: 20px;
     }
 
     .section {
-      margin-top: 20px;
+      margin-bottom: 25px;
     }
 
     .section h3 {
-      font-size: 1em;
-      font-weight: 600;
-      color: #777;
+      font-size: 0.95em;
+      color: #888;
       text-transform: uppercase;
       margin-bottom: 8px;
       border-bottom: 1px solid #eee;
       padding-bottom: 4px;
     }
 
+    .section p, .section ul {
+      font-size: 1em;
+      line-height: 1.6;
+    }
+
     .section ul {
       list-style: none;
+      padding-left: 0;
     }
 
     .section ul li {
-      margin-bottom: 6px;
-      font-size: 1em;
-      line-height: 1.5;
+      margin-bottom: 8px;
+      position: relative;
+      padding-left: 22px;
+    }
+
+    .section ul li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #2c3e50;
+      font-size: 1.2em;
     }
 
     .footer {
-      margin-top: 30px;
       font-size: 0.9em;
       color: #aaa;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 700px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .content {
+        margin-top: 20px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <div class="name">Afrah Rasheed</div>
-    <div class="tagline">29 • Male • Hospitality Professional & Entrepreneur</div>
+  <div class="container">
+    <img src="profile.jpg" alt="Afrah Rasheed" class="profile-img" />
+    <div class="content">
+      <div class="name">Afrah Rasheed</div>
+      <div class="subtitle">29 • Male • Hospitality Professional & Entrepreneur</div>
 
-    <div class="section">
-      <h3>About Me</h3>
-      <p>
-        With over 8 years in the hospitality industry, I’ve built my career around creating exceptional guest experiences and leading dynamic teams. For more than 5 years, I’ve taken on leadership roles that challenged and shaped me — from resort pre-openings to launching businesses that matter.
-      </p>
-    </div>
+      <div class="section">
+        <h3>About Me</h3>
+        <p>
+          With over 8 years in the hospitality industry, I’ve built my career around people-first service and operational excellence. 
+          I've led resort pre-openings, built local businesses, and nurtured teams that thrive on purpose and performance. 
+          I’m driven by growth, community, and the joy of building things that matter.
+        </p>
+      </div>
 
-    <div class="section">
-      <h3>Career Highlights</h3>
-      <ul>
-        <li>🏨 8+ years in Hospitality, including pre-opening experience at a Maldivian Resort</li>
-        <li>👨‍💼 5+ years in Leadership roles</li>
-        <li>🚀 Founder & Owner of <strong>Efro Investments</strong></li>
-        <li>⏱️ Owner of <strong>The Maldivian Timekeeper</strong></li>
-        <li>⚽ Founder & Owner of <strong>Fenaathuru Football Club</strong></li>
-        <li>📱 Co-Founder & COO of <strong>BittenApp</strong></li>
-      </ul>
-    </div>
+      <div class="section">
+        <h3>Career Highlights</h3>
+        <ul>
+          <li>8+ years in Hospitality, including pre-opening experience at a Maldivian Resort</li>
+          <li>5+ years in Leadership roles</li>
+          <li>Founder & Owner of <strong>Efro Investments</strong></li>
+          <li>Owner of <strong>The Maldivian Timekeeper</strong></li>
+          <li>Founder & Owner of <strong>Fenaathuru Football Club</strong></li>
+          <li>Co-Founder & COO of <strong>BittenApp</strong></li>
+        </ul>
+      </div>
 
-    <div class="footer">
-      Always building, always learning.
+      <div class="footer">
+        Always building. Always learning.
+      </div>
     </div>
   </div>
 </body>
